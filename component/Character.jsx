@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import photoRickAndMorty from '../src/assets/rickandmorty.png'
 
 const Character = ({location}) => {
 
@@ -26,7 +27,7 @@ const Character = ({location}) => {
         ) : (
         <div className='card'>
             <div className='info-img'>
-                <img src={residentInfo.image} alt={`Character Photo: ${residentInfo.name}`} />
+                <img src={residentInfo.image == undefined ? photoRickAndMorty : residentInfo.image} alt={`Character Photo: ${residentInfo.name}`} />
             </div>
             <div className='info'>
                     {residentInfo.status === "Alive" ? (
