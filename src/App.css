@@ -132,7 +132,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid greenyellow;
+  border-bottom: 3px solid greenyellow  ;
 }
 
 @media(max-width:667px){

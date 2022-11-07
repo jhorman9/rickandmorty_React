@@ -43,7 +43,7 @@ function App() {
       </div>
       <div className='searched'>
         <div className='search'>
-          <input type="text" value={typeId} placeholder="Type a location ID" onChange={e => setTypeId(e.target.value)}/>
+          <input type="text" value={typeId} placeholder="search for a user by ID from number 1 to 126" onChange={e => setTypeId(e.target.value)}/>
           {
           typeId >= 127 || typeId == 0 ?
           (
