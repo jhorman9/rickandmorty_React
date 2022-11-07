@@ -72,6 +72,7 @@ function App() {
             )) 
           }
         </div>
+      </div>
         {
           locationRickAndMorty.residents?.length >= 1 ? (
             <div className='footer' style={{marginTop:"20px"}}>
@@ -83,7 +84,6 @@ function App() {
             </div>
           )
         }
-      </div>
     </div>
     </>
         )}
