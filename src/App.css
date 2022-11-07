@@ -6,6 +6,8 @@ body{
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
   width: 100%;
+  max-width: 1350px;
+  margin: auto;
   height: auto;
 }
 
@@ -15,177 +17,14 @@ body{
   height: auto;
 }
 
+
+/*------ Header to APP ------*/
+
 .App{
   height: auto;
 }
 
-.header .header-img{
-  width: 100%;
-  height: 350px;
-}
-
-.search{
-  margin-top: -100px;
-}
-
-input{
-  width: 50%;
-  height: 30px;
-  outline: none;
-  border: none;
-  font-size: 100%;
-  border-radius: 5px 0 0 5px;
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  -ms-border-radius: 5px 0 0 5px;
-  -o-border-radius: 5px 0 0 5px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.btn{
-  width: 80px;
-  height: 50px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  cursor: pointer;
-  font-size: 100%;
-  font-weight: bolder;
-  text-shadow: 1px 1px 5px black;
-}
-
-.location{
-  width: 90%;
-  height: 150px;
-  margin: 60px auto 0;
-  padding-top: 8px;
-  color: white;
-}
-
-@media(max-width:667px){
-  .location{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-.location-info{
-  width: 75%;
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media(max-width:667px){
-  .location-info{
-    width: 100%;
-    align-items: flex-start;
-  }
-}
-
-.location-info p{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.info{
-  text-align: start;
-}
-
-.white-info{
-  color: white;
-}
-
-.status{
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-right: 5px;
-}
-
-.main{
-  margin: auto;
-  width: 100%;
-}
-
-
-.cards-content{
-  width: 75%;
-  margin: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-@media (max-width:1000px){
-  .cards-content{
-    width: 100%;
-  }
-}
-
-@media(max-width:340px){
-  .cards-content{
-    margin-top: 20px;
-  }
-}
-
-.card{
-  width: 200px;
-  padding: 15px;
-  background-color: rgb(66, 66, 66);
-  margin: 7px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  margin-top: 18px;
-}
-
-.card p{
-  margin: 5px 0;
-}
-
-.card img{
-  width: 100%;
-  border-radius: 5px 5px 0 0;
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  -ms-border-radius: 5px 5px 0 0;
-  -o-border-radius: 5px 5px 0 0;
-}
-
-.row{
-  display: flex;
-  text-align: start;
-  justify-content: flex-start;
-  align-items: center;
-  color: whitesmoke;
-}
-
-span{
-  color: whitesmoke;
-}
-
-b{
-  font-weight: 900;
-  color: rgba(168, 168, 168, 0.884);
-}
-
-.title{
+.App .title{
   position: absolute;
   top: 0;
   width: 100%;
@@ -209,7 +48,7 @@ b{
     -ms-transform: translateX(-1%);
     -o-transform: translateX(-1%);
     text-shadow: 0 0 10px rgb(48, 218, 6)
-}
+  }
 
   to{
     transform: translateX(1%);
@@ -218,10 +57,178 @@ b{
     -ms-transform: translateX(1%);
     -o-transform: translateX(1%);
     text-shadow: 0 0 30px rgb(48, 238, 0)
-}
+  }
 }
 
-.loading{
+.App .header .header-img{
+  width: 100%;
+  height: 350px;
+}
+
+.App .searched .search{
+  margin-top: -100px;
+}
+
+.App .searched .search input{
+  width: 50%;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 100%;
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.App .searched .search button{
+  width: 80px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px black;
+}
+
+.App .searched .location{
+  width: 90%;
+  height: 150px;
+  margin: 60px auto 0;
+  padding-top: 8px;
+  color: white;
+}
+
+@media(max-width:667px){
+  .App .searched .location{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.App .searched .location .location-info{
+  width: 75%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width:667px){
+  .App .searched .location .location-info{
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+.App .searched .location .location-info p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*------ Main ------*/
+
+.main .info{
+  text-align: start;
+}
+
+.main .cards-content{
+  width: 75%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width:1000px){
+  .main .cards-content{
+    width: 100%;
+  }
+}
+
+@media(max-width:340px){
+  .main .cards-content{
+    margin-top: 20px;
+  }
+}
+
+.main .cards-content .card{
+  width: 200px;
+  padding: 15px;
+  background-color: rgb(66, 66, 66);
+  margin: 7px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 18px;
+}
+
+.main .cards-content .card p{
+  margin: 5px 0;
+}
+
+.main .cards-content .card img{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+}
+
+.main .cards-content .card .info .row-card-info{
+  display: flex;
+  text-align: start;
+  justify-content: flex-start;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.main .cards-content .card .info .row-card-info .status-content{
+  width: 30px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .cards-content .card .info .row-card-info .status-content .status{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 5px;
+}
+ 
+.main .cards-content .card .info span{
+  color: whitesmoke;
+}
+
+.main .cards-content .card .info b{
+  font-weight: 900;
+  color: rgba(168, 168, 168, 0.884);
+}
+
+/*---- Loadings ---- */
+
+ .loading{
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -251,8 +258,11 @@ b{
   align-items: center;
 }
 
+/*----- footer to APP -----*/
+
 .footer{
   width: 100%;
+  max-width: 1350px;
   height: fit-content;
   background-color: greenyellow;
   text-align: center;
