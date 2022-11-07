@@ -82,6 +82,7 @@ body{
   -o-border-radius: 5px 0 0 5px;
   font-weight: 600;
   text-align: center;
+  box-shadow: 0 0 15px rgb(51, 255, 0);
 }
 
 .App .searched .search button{
