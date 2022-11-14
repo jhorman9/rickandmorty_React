@@ -49,7 +49,14 @@ const Character = ({location}) => {
                             </div>
                         </div>
                     ) : (
-                        <div className='row-card-info'> <div className='status' style={{background:"gray", boxShadow:"0 0 10px gray"}}></div> {residentInfo.status} - {residentInfo.species}</div>
+                        <div className='row-card-info'> 
+                            <div className='status-content'>
+                                <div className='status' style={{background:"gray", boxShadow:"0 0 10px gray"}}></div>
+                            </div>
+                            <div className='status-info'>
+                                <p>{residentInfo.status} - {residentInfo.species}</p> 
+                            </div>
+                        </div>
                     )}
                 <p><b>Name:</b> <span>{residentInfo.name}</span></p>
                 <p><b>Origin: </b> <span>{residentInfo.origin?.name}</span></p>
