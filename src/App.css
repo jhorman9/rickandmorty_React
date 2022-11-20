@@ -198,6 +198,10 @@ body{
   margin: 5px 0;
 }
 
+.main .cards-content .card .info-img{
+  height: 206px;
+}
+
 .main .cards-content .card img{
   width: 100%;
   border-radius: 5px 5px 0 0;
